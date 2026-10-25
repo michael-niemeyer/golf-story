@@ -1,0 +1,10 @@
+max yd->m rounding gap (m): 0.89
+rows: 24 complete: 23 missing: [['LPGA', '3-iron']]
+calibration: {'Cd1': 0.2, 'Cl1': 0.53, 'carry_yd': 278.74548266150913, 'target_yd': 282.0, 'err_yd': -3.2545173384908708, 'err_pct': -1.1540841625854152, 'within_5pct': True, 'search': {'Cd1': [0.2, 0.22], 'Cl1': [0.49, 0.53], 'step': 0.0025, 'n': 153}}
+tour   coef_set  n_clubs  mae_carry_yd  mae_apex_yd  mae_land_deg
+LPGA calibrated       11         22.97         4.26          4.79
+ PGA calibrated       12         20.34         6.83          6.23
+LPGA        raw       11         10.96         2.66          4.00
+ PGA        raw       12          8.16         3.54          5.56
+table sizes: {'trackman_avg': 24, 'runs': 138, 'trajectory': 55611}
+wrote data/trackman.json, data/validation.json

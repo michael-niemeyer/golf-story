@@ -1,0 +1,1161 @@
+{
+ "coef_sets": {
+  "raw": {
+   "Cd1": 0.24,
+   "Cl1": 0.54
+  },
+  "calibrated": {
+   "Cd1": 0.2,
+   "Cl1": 0.53
+  }
+ },
+ "calibration": {
+  "Cd1": 0.2,
+  "Cl1": 0.53,
+  "carry_yd": 278.74548266150913,
+  "target_yd": 282.0,
+  "err_yd": -3.2545173384908708,
+  "err_pct": -1.1540841625854152,
+  "within_5pct": true,
+  "search": {
+   "Cd1": [
+    0.2,
+    0.22
+   ],
+   "Cl1": [
+    0.49,
+    0.53
+   ],
+   "step": 0.0025,
+   "n": 153
+  },
+  "surface": {
+   "Cd1": [
+    0.2,
+    0.2025,
+    0.205,
+    0.2075,
+    0.21,
+    0.2125,
+    0.215,
+    0.2175,
+    0.22
+   ],
+   "Cl1": [
+    0.49,
+    0.4925,
+    0.495,
+    0.4975,
+    0.5,
+    0.5025,
+    0.505,
+    0.5075,
+    0.51,
+    0.5125,
+    0.515,
+    0.5175,
+    0.52,
+    0.5225,
+    0.525,
+    0.5275,
+    0.53
+   ],
+   "carry_yd": [
+    [
+     271.56,
+     272.05,
+     272.53,
+     273.0,
+     273.47,
+     273.94,
+     274.4,
+     274.85,
+     275.31,
+     275.75,
+     276.2,
+     276.63,
+     277.06,
+     277.49,
+     277.91,
+     278.33,
+     278.75
+    ],
+    [
+     269.73,
+     270.21,
+     270.68,
+     271.15,
+     271.62,
+     272.08,
+     272.54,
+     272.99,
+     273.44,
+     273.88,
+     274.32,
+     274.76,
+     275.19,
+     275.61,
+     276.03,
+     276.45,
+     276.86
+    ],
+    [
+     267.92,
+     268.39,
+     268.87,
+     269.33,
+     269.8,
+     270.25,
+     270.71,
+     271.16,
+     271.6,
+     272.04,
+     272.48,
+     272.91,
+     273.34,
+     273.76,
+     274.17,
+     274.59,
+     274.99
+    ],
+    [
+     266.14,
+     266.61,
+     267.08,
+     267.54,
+     268.0,
+     268.45,
+     268.9,
+     269.35,
+     269.79,
+     270.23,
+     270.66,
+     271.09,
+     271.51,
+     271.93,
+     272.34,
+     272.75,
+     273.16
+    ],
+    [
+     264.38,
+     264.85,
+     265.31,
+     265.77,
+     266.23,
+     266.68,
+     267.13,
+     267.57,
+     268.01,
+     268.44,
+     268.87,
+     269.29,
+     269.71,
+     270.13,
+     270.54,
+     270.95,
+     271.35
+    ],
+    [
+     262.65,
+     263.11,
+     263.57,
+     264.03,
+     264.48,
+     264.93,
+     265.37,
+     265.81,
+     266.25,
+     266.68,
+     267.1,
+     267.52,
+     267.94,
+     268.35,
+     268.76,
+     269.17,
+     269.57
+    ],
+    [
+     260.94,
+     261.4,
+     261.86,
+     262.31,
+     262.76,
+     263.21,
+     263.65,
+     264.08,
+     264.51,
+     264.94,
+     265.36,
+     265.78,
+     266.2,
+     266.61,
+     267.01,
+     267.41,
+     267.81
+    ],
+    [
+     259.26,
+     259.72,
+     260.17,
+     260.62,
+     261.07,
+     261.51,
+     261.94,
+     262.38,
+     262.8,
+     263.23,
+     263.65,
+     264.06,
+     264.47,
+     264.88,
+     265.28,
+     265.68,
+     266.08
+    ],
+    [
+     257.61,
+     258.06,
+     258.51,
+     258.95,
+     259.39,
+     259.83,
+     260.26,
+     260.69,
+     261.12,
+     261.54,
+     261.96,
+     262.37,
+     262.78,
+     263.18,
+     263.58,
+     263.98,
+     264.37
+    ]
+   ]
+  }
+ },
+ "validation": [
+  {
+   "tour": "LPGA",
+   "club": "Driver",
+   "club_order": 1,
+   "coef_set": "calibrated",
+   "measured_carry_yd": 223.0,
+   "model_carry_yd": 234.04,
+   "carry_err_yd": 11.04,
+   "measured_apex_yd": 26.0,
+   "model_apex_yd": 30.8,
+   "measured_land_deg": 36.0,
+   "model_land_deg": 36.27,
+   "frac_outside": 0.0
+  },
+  {
+   "tour": "LPGA",
+   "club": "3-wood",
+   "club_order": 2,
+   "coef_set": "calibrated",
+   "measured_carry_yd": 200.0,
+   "model_carry_yd": 216.63,
+   "carry_err_yd": 16.63,
+   "measured_apex_yd": 25.0,
+   "model_apex_yd": 24.96,
+   "measured_land_deg": 38.0,
+   "model_land_deg": 32.91,
+   "frac_outside": 0.0
+  },
+  {
+   "tour": "LPGA",
+   "club": "5-wood",
+   "club_order": 3,
+   "coef_set": "calibrated",
+   "measured_carry_yd": 189.0,
+   "model_carry_yd": 216.6,
+   "carry_err_yd": 27.6,
+   "measured_apex_yd": 25.0,
+   "model_apex_yd": 30.85,
+   "measured_land_deg": 43.0,
+   "model_land_deg": 37.74,
+   "frac_outside": 0.9
+  },
+  {
+   "tour": "LPGA",
+   "club": "Hybrid",
+   "club_order": 4,
+   "coef_set": "calibrated",
+   "measured_carry_yd": 178.0,
+   "model_carry_yd": 208.85,
+   "carry_err_yd": 30.85,
+   "measured_apex_yd": 25.0,
+   "model_apex_yd": 31.74,
+   "measured_land_deg": 45.0,
+   "model_land_deg": 38.69,
+   "frac_outside": 0.944
+  },
+  {
+   "tour": "LPGA",
+   "club": "4-iron",
+   "club_order": 6,
+   "coef_set": "calibrated",
+   "measured_carry_yd": 175.0,
+   "model_carry_yd": 195.02,
+   "carry_err_yd": 20.02,
+   "measured_apex_yd": 25.0,
+   "model_apex_yd": 27.66,
+   "measured_land_deg": 43.0,
+   "model_land_deg": 36.81,
+   "frac_outside": 0.986
+  },
+  {
+   "tour": "LPGA",
+   "club": "5-iron",
+   "club_order": 7,
+   "coef_set": "calibrated",
+   "measured_carry_yd": 166.0,
+   "model_carry_yd": 187.71,
+   "carry_err_yd": 21.71,
+   "measured_apex_yd": 25.0,
+   "model_apex_yd": 27.36,
+   "measured_land_deg": 45.0,
+   "model_land_deg": 37.16,
+   "frac_outside": 1.0
+  },
+  {
+   "tour": "LPGA",
+   "club": "6-iron",
+   "club_order": 8,
+   "coef_set": "calibrated",
+   "measured_carry_yd": 155.0,
+   "model_carry_yd": 182.18,
+   "carry_err_yd": 27.18,
+   "measured_apex_yd": 25.0,
+   "model_apex_yd": 31.02,
+   "measured_land_deg": 46.0,
+   "model_land_deg": 40.26,
+   "frac_outside": 1.0
+  },
+  {
+   "tour": "LPGA",
+   "club": "7-iron",
+   "club_order": 9,
+   "coef_set": "calibrated",
+   "measured_carry_yd": 143.0,
+   "model_carry_yd": 171.17,
+   "carry_err_yd": 28.17,
+   "measured_apex_yd": 26.0,
+   "model_apex_yd": 31.62,
+   "measured_land_deg": 47.0,
+   "model_land_deg": 41.64,
+   "frac_outside": 1.0
+  },
+  {
+   "tour": "LPGA",
+   "club": "8-iron",
+   "club_order": 10,
+   "coef_set": "calibrated",
+   "measured_carry_yd": 133.0,
+   "model_carry_yd": 160.92,
+   "carry_err_yd": 27.92,
+   "measured_apex_yd": 27.0,
+   "model_apex_yd": 33.13,
+   "measured_land_deg": 47.0,
+   "model_land_deg": 43.56,
+   "frac_outside": 1.0
+  },
+  {
+   "tour": "LPGA",
+   "club": "9-iron",
+   "club_order": 11,
+   "coef_set": "calibrated",
+   "measured_carry_yd": 123.0,
+   "model_carry_yd": 145.92,
+   "carry_err_yd": 22.92,
+   "measured_apex_yd": 27.0,
+   "model_apex_yd": 31.71,
+   "measured_land_deg": 48.0,
+   "model_land_deg": 44.22,
+   "frac_outside": 1.0
+  },
+  {
+   "tour": "LPGA",
+   "club": "PW",
+   "club_order": 12,
+   "coef_set": "calibrated",
+   "measured_carry_yd": 111.0,
+   "model_carry_yd": 129.61,
+   "carry_err_yd": 18.61,
+   "measured_apex_yd": 27.0,
+   "model_apex_yd": 28.96,
+   "measured_land_deg": 48.0,
+   "model_land_deg": 44.58,
+   "frac_outside": 1.0
+  },
+  {
+   "tour": "PGA",
+   "club": "Driver",
+   "club_order": 1,
+   "coef_set": "calibrated",
+   "measured_carry_yd": 282.0,
+   "model_carry_yd": 278.75,
+   "carry_err_yd": -3.25,
+   "measured_apex_yd": 35.0,
+   "model_apex_yd": 40.06,
+   "measured_land_deg": 39.0,
+   "model_land_deg": 39.92,
+   "frac_outside": 0.029
+  },
+  {
+   "tour": "PGA",
+   "club": "3-wood",
+   "club_order": 2,
+   "coef_set": "calibrated",
+   "measured_carry_yd": 249.0,
+   "model_carry_yd": 267.43,
+   "carry_err_yd": 18.43,
+   "measured_apex_yd": 32.0,
+   "model_apex_yd": 39.62,
+   "measured_land_deg": 44.0,
+   "model_land_deg": 40.37,
+   "frac_outside": 0.721
+  },
+  {
+   "tour": "PGA",
+   "club": "5-wood",
+   "club_order": 3,
+   "coef_set": "calibrated",
+   "measured_carry_yd": 236.0,
+   "model_carry_yd": 258.87,
+   "carry_err_yd": 22.87,
+   "measured_apex_yd": 33.0,
+   "model_apex_yd": 40.61,
+   "measured_land_deg": 48.0,
+   "model_land_deg": 41.25,
+   "frac_outside": 0.837
+  },
+  {
+   "tour": "PGA",
+   "club": "Hybrid",
+   "club_order": 4,
+   "coef_set": "calibrated",
+   "measured_carry_yd": 231.0,
+   "model_carry_yd": 248.02,
+   "carry_err_yd": 17.02,
+   "measured_apex_yd": 31.0,
+   "model_apex_yd": 38.72,
+   "measured_land_deg": 49.0,
+   "model_land_deg": 40.84,
+   "frac_outside": 0.883
+  },
+  {
+   "tour": "PGA",
+   "club": "3-iron",
+   "club_order": 5,
+   "coef_set": "calibrated",
+   "measured_carry_yd": 218.0,
+   "model_carry_yd": 241.48,
+   "carry_err_yd": 23.48,
+   "measured_apex_yd": 30.0,
+   "model_apex_yd": 35.7,
+   "measured_land_deg": 48.0,
+   "model_land_deg": 39.55,
+   "frac_outside": 0.868
+  },
+  {
+   "tour": "PGA",
+   "club": "4-iron",
+   "club_order": 6,
+   "coef_set": "calibrated",
+   "measured_carry_yd": 209.0,
+   "model_carry_yd": 233.45,
+   "carry_err_yd": 24.45,
+   "measured_apex_yd": 31.0,
+   "model_apex_yd": 35.28,
+   "measured_land_deg": 49.0,
+   "model_land_deg": 39.75,
+   "frac_outside": 0.926
+  },
+  {
+   "tour": "PGA",
+   "club": "5-iron",
+   "club_order": 7,
+   "coef_set": "calibrated",
+   "measured_carry_yd": 199.0,
+   "model_carry_yd": 225.19,
+   "carry_err_yd": 26.19,
+   "measured_apex_yd": 33.0,
+   "model_apex_yd": 36.27,
+   "measured_land_deg": 50.0,
+   "model_land_deg": 40.72,
+   "frac_outside": 0.99
+  },
+  {
+   "tour": "PGA",
+   "club": "6-iron",
+   "club_order": 8,
+   "coef_set": "calibrated",
+   "measured_carry_yd": 188.0,
+   "model_carry_yd": 215.0,
+   "carry_err_yd": 27.0,
+   "measured_apex_yd": 32.0,
+   "model_apex_yd": 39.89,
+   "measured_land_deg": 50.0,
+   "model_land_deg": 43.08,
+   "frac_outside": 1.0
+  },
+  {
+   "tour": "PGA",
+   "club": "7-iron",
+   "club_order": 9,
+   "coef_set": "calibrated",
+   "measured_carry_yd": 176.0,
+   "model_carry_yd": 199.88,
+   "carry_err_yd": 23.88,
+   "measured_apex_yd": 34.0,
+   "model_apex_yd": 40.79,
+   "measured_land_deg": 51.0,
+   "model_land_deg": 44.44,
+   "frac_outside": 1.0
+  },
+  {
+   "tour": "PGA",
+   "club": "8-iron",
+   "club_order": 10,
+   "coef_set": "calibrated",
+   "measured_carry_yd": 164.0,
+   "model_carry_yd": 187.21,
+   "carry_err_yd": 23.21,
+   "measured_apex_yd": 33.0,
+   "model_apex_yd": 41.45,
+   "measured_land_deg": 51.0,
+   "model_land_deg": 45.65,
+   "frac_outside": 1.0
+  },
+  {
+   "tour": "PGA",
+   "club": "9-iron",
+   "club_order": 11,
+   "coef_set": "calibrated",
+   "measured_carry_yd": 152.0,
+   "model_carry_yd": 173.24,
+   "carry_err_yd": 21.24,
+   "measured_apex_yd": 32.0,
+   "model_apex_yd": 41.12,
+   "measured_land_deg": 52.0,
+   "model_land_deg": 46.61,
+   "frac_outside": 1.0
+  },
+  {
+   "tour": "PGA",
+   "club": "PW",
+   "club_order": 12,
+   "coef_set": "calibrated",
+   "measured_carry_yd": 142.0,
+   "model_carry_yd": 155.04,
+   "carry_err_yd": 13.04,
+   "measured_apex_yd": 32.0,
+   "model_apex_yd": 40.47,
+   "measured_land_deg": 52.0,
+   "model_land_deg": 47.9,
+   "frac_outside": 1.0
+  },
+  {
+   "tour": "LPGA",
+   "club": "Driver",
+   "club_order": 1,
+   "coef_set": "raw",
+   "measured_carry_yd": 223.0,
+   "model_carry_yd": 214.11,
+   "carry_err_yd": -8.89,
+   "measured_apex_yd": 26.0,
+   "model_apex_yd": 28.31,
+   "measured_land_deg": 36.0,
+   "model_land_deg": 37.11,
+   "frac_outside": 0.0
+  },
+  {
+   "tour": "LPGA",
+   "club": "3-wood",
+   "club_order": 2,
+   "coef_set": "raw",
+   "measured_carry_yd": 200.0,
+   "model_carry_yd": 198.69,
+   "carry_err_yd": -1.31,
+   "measured_apex_yd": 25.0,
+   "model_apex_yd": 23.06,
+   "measured_land_deg": 38.0,
+   "model_land_deg": 33.72,
+   "frac_outside": 0.0
+  },
+  {
+   "tour": "LPGA",
+   "club": "5-wood",
+   "club_order": 3,
+   "coef_set": "raw",
+   "measured_carry_yd": 189.0,
+   "model_carry_yd": 198.93,
+   "carry_err_yd": 9.93,
+   "measured_apex_yd": 25.0,
+   "model_apex_yd": 28.38,
+   "measured_land_deg": 43.0,
+   "model_land_deg": 38.57,
+   "frac_outside": 0.907
+  },
+  {
+   "tour": "LPGA",
+   "club": "Hybrid",
+   "club_order": 4,
+   "coef_set": "raw",
+   "measured_carry_yd": 178.0,
+   "model_carry_yd": 192.29,
+   "carry_err_yd": 14.29,
+   "measured_apex_yd": 25.0,
+   "model_apex_yd": 29.35,
+   "measured_land_deg": 45.0,
+   "model_land_deg": 39.6,
+   "frac_outside": 0.949
+  },
+  {
+   "tour": "LPGA",
+   "club": "4-iron",
+   "club_order": 6,
+   "coef_set": "raw",
+   "measured_carry_yd": 175.0,
+   "model_carry_yd": 180.03,
+   "carry_err_yd": 5.03,
+   "measured_apex_yd": 25.0,
+   "model_apex_yd": 25.74,
+   "measured_land_deg": 43.0,
+   "model_land_deg": 37.74,
+   "frac_outside": 0.987
+  },
+  {
+   "tour": "LPGA",
+   "club": "5-iron",
+   "club_order": 7,
+   "coef_set": "raw",
+   "measured_carry_yd": 166.0,
+   "model_carry_yd": 173.67,
+   "carry_err_yd": 7.67,
+   "measured_apex_yd": 25.0,
+   "model_apex_yd": 25.55,
+   "measured_land_deg": 45.0,
+   "model_land_deg": 38.12,
+   "frac_outside": 1.0
+  },
+  {
+   "tour": "LPGA",
+   "club": "6-iron",
+   "club_order": 8,
+   "coef_set": "raw",
+   "measured_carry_yd": 155.0,
+   "model_carry_yd": 169.07,
+   "carry_err_yd": 14.07,
+   "measured_apex_yd": 25.0,
+   "model_apex_yd": 29.04,
+   "measured_land_deg": 46.0,
+   "model_land_deg": 41.27,
+   "frac_outside": 1.0
+  },
+  {
+   "tour": "LPGA",
+   "club": "7-iron",
+   "club_order": 9,
+   "coef_set": "raw",
+   "measured_carry_yd": 143.0,
+   "model_carry_yd": 159.46,
+   "carry_err_yd": 16.46,
+   "measured_apex_yd": 26.0,
+   "model_apex_yd": 29.75,
+   "measured_land_deg": 47.0,
+   "model_land_deg": 42.67,
+   "frac_outside": 1.0
+  },
+  {
+   "tour": "LPGA",
+   "club": "8-iron",
+   "club_order": 10,
+   "coef_set": "raw",
+   "measured_carry_yd": 133.0,
+   "model_carry_yd": 150.49,
+   "carry_err_yd": 17.49,
+   "measured_apex_yd": 27.0,
+   "model_apex_yd": 31.31,
+   "measured_land_deg": 47.0,
+   "model_land_deg": 44.6,
+   "frac_outside": 1.0
+  },
+  {
+   "tour": "LPGA",
+   "club": "9-iron",
+   "club_order": 11,
+   "coef_set": "raw",
+   "measured_carry_yd": 123.0,
+   "model_carry_yd": 137.07,
+   "carry_err_yd": 14.07,
+   "measured_apex_yd": 27.0,
+   "model_apex_yd": 30.18,
+   "measured_land_deg": 48.0,
+   "model_land_deg": 45.27,
+   "frac_outside": 1.0
+  },
+  {
+   "tour": "LPGA",
+   "club": "PW",
+   "club_order": 12,
+   "coef_set": "raw",
+   "measured_carry_yd": 111.0,
+   "model_carry_yd": 122.4,
+   "carry_err_yd": 11.4,
+   "measured_apex_yd": 27.0,
+   "model_apex_yd": 27.75,
+   "measured_land_deg": 48.0,
+   "model_land_deg": 45.6,
+   "frac_outside": 1.0
+  },
+  {
+   "tour": "PGA",
+   "club": "Driver",
+   "club_order": 1,
+   "coef_set": "raw",
+   "measured_carry_yd": 282.0,
+   "model_carry_yd": 252.97,
+   "carry_err_yd": -29.03,
+   "measured_apex_yd": 35.0,
+   "model_apex_yd": 35.98,
+   "measured_land_deg": 39.0,
+   "model_land_deg": 40.51,
+   "frac_outside": 0.027
+  },
+  {
+   "tour": "PGA",
+   "club": "3-wood",
+   "club_order": 2,
+   "coef_set": "raw",
+   "measured_carry_yd": 249.0,
+   "model_carry_yd": 243.26,
+   "carry_err_yd": -5.74,
+   "measured_apex_yd": 32.0,
+   "model_apex_yd": 35.49,
+   "measured_land_deg": 44.0,
+   "model_land_deg": 40.93,
+   "frac_outside": 0.74
+  },
+  {
+   "tour": "PGA",
+   "club": "5-wood",
+   "club_order": 3,
+   "coef_set": "raw",
+   "measured_carry_yd": 236.0,
+   "model_carry_yd": 236.1,
+   "carry_err_yd": 0.1,
+   "measured_apex_yd": 33.0,
+   "model_apex_yd": 36.5,
+   "measured_land_deg": 48.0,
+   "model_land_deg": 41.87,
+   "frac_outside": 0.848
+  },
+  {
+   "tour": "PGA",
+   "club": "Hybrid",
+   "club_order": 4,
+   "coef_set": "raw",
+   "measured_carry_yd": 231.0,
+   "model_carry_yd": 226.65,
+   "carry_err_yd": -4.35,
+   "measured_apex_yd": 31.0,
+   "model_apex_yd": 34.98,
+   "measured_land_deg": 49.0,
+   "model_land_deg": 41.5,
+   "frac_outside": 0.891
+  },
+  {
+   "tour": "PGA",
+   "club": "3-iron",
+   "club_order": 5,
+   "coef_set": "raw",
+   "measured_carry_yd": 218.0,
+   "model_carry_yd": 220.74,
+   "carry_err_yd": 2.74,
+   "measured_apex_yd": 30.0,
+   "model_apex_yd": 32.35,
+   "measured_land_deg": 48.0,
+   "model_land_deg": 40.21,
+   "frac_outside": 0.877
+  },
+  {
+   "tour": "PGA",
+   "club": "4-iron",
+   "club_order": 6,
+   "coef_set": "raw",
+   "measured_carry_yd": 209.0,
+   "model_carry_yd": 213.83,
+   "carry_err_yd": 4.83,
+   "measured_apex_yd": 31.0,
+   "model_apex_yd": 32.09,
+   "measured_land_deg": 49.0,
+   "model_land_deg": 40.46,
+   "frac_outside": 0.932
+  },
+  {
+   "tour": "PGA",
+   "club": "5-iron",
+   "club_order": 7,
+   "coef_set": "raw",
+   "measured_carry_yd": 199.0,
+   "model_carry_yd": 206.83,
+   "carry_err_yd": 7.83,
+   "measured_apex_yd": 33.0,
+   "model_apex_yd": 33.14,
+   "measured_land_deg": 50.0,
+   "model_land_deg": 41.5,
+   "frac_outside": 0.99
+  },
+  {
+   "tour": "PGA",
+   "club": "6-iron",
+   "club_order": 8,
+   "coef_set": "raw",
+   "measured_carry_yd": 188.0,
+   "model_carry_yd": 198.34,
+   "carry_err_yd": 10.34,
+   "measured_apex_yd": 32.0,
+   "model_apex_yd": 36.68,
+   "measured_land_deg": 50.0,
+   "model_land_deg": 43.95,
+   "frac_outside": 1.0
+  },
+  {
+   "tour": "PGA",
+   "club": "7-iron",
+   "club_order": 9,
+   "coef_set": "raw",
+   "measured_carry_yd": 176.0,
+   "model_carry_yd": 185.26,
+   "carry_err_yd": 9.26,
+   "measured_apex_yd": 34.0,
+   "model_apex_yd": 37.79,
+   "measured_land_deg": 51.0,
+   "model_land_deg": 45.37,
+   "frac_outside": 1.0
+  },
+  {
+   "tour": "PGA",
+   "club": "8-iron",
+   "club_order": 10,
+   "coef_set": "raw",
+   "measured_carry_yd": 164.0,
+   "model_carry_yd": 174.24,
+   "carry_err_yd": 10.24,
+   "measured_apex_yd": 33.0,
+   "model_apex_yd": 38.61,
+   "measured_land_deg": 51.0,
+   "model_land_deg": 46.6,
+   "frac_outside": 1.0
+  },
+  {
+   "tour": "PGA",
+   "club": "9-iron",
+   "club_order": 11,
+   "coef_set": "raw",
+   "measured_carry_yd": 152.0,
+   "model_carry_yd": 161.88,
+   "carry_err_yd": 9.88,
+   "measured_apex_yd": 32.0,
+   "model_apex_yd": 38.56,
+   "measured_land_deg": 52.0,
+   "model_land_deg": 47.57,
+   "frac_outside": 1.0
+  },
+  {
+   "tour": "PGA",
+   "club": "PW",
+   "club_order": 12,
+   "coef_set": "raw",
+   "measured_carry_yd": 142.0,
+   "model_carry_yd": 145.6,
+   "carry_err_yd": 3.6,
+   "measured_apex_yd": 32.0,
+   "model_apex_yd": 38.27,
+   "measured_land_deg": 52.0,
+   "model_land_deg": 48.86,
+   "frac_outside": 1.0
+  }
+ ],
+ "mae": [
+  {
+   "tour": "LPGA",
+   "coef_set": "calibrated",
+   "n_clubs": 11,
+   "mae_carry_yd": 22.97,
+   "mae_apex_yd": 4.26,
+   "mae_land_deg": 4.79
+  },
+  {
+   "tour": "PGA",
+   "coef_set": "calibrated",
+   "n_clubs": 12,
+   "mae_carry_yd": 20.34,
+   "mae_apex_yd": 6.83,
+   "mae_land_deg": 6.23
+  },
+  {
+   "tour": "LPGA",
+   "coef_set": "raw",
+   "n_clubs": 11,
+   "mae_carry_yd": 10.96,
+   "mae_apex_yd": 2.66,
+   "mae_land_deg": 4.0
+  },
+  {
+   "tour": "PGA",
+   "coef_set": "raw",
+   "n_clubs": 12,
+   "mae_carry_yd": 8.16,
+   "mae_apex_yd": 3.54,
+   "mae_land_deg": 5.56
+  }
+ ],
+ "variants": {
+  "raw|PGA|Driver": {
+   "full": 252.97,
+   "drag": 133.66,
+   "vacuum": 231.33
+  },
+  "raw|PGA|3-wood": {
+   "full": 243.26,
+   "drag": 115.49,
+   "vacuum": 186.49
+  },
+  "raw|PGA|5-wood": {
+   "full": 236.1,
+   "drag": 112.35,
+   "vacuum": 180.09
+  },
+  "raw|PGA|Hybrid": {
+   "full": 226.65,
+   "drag": 109.0,
+   "vacuum": 172.41
+  },
+  "raw|PGA|3-iron": {
+   "full": 220.74,
+   "drag": 105.95,
+   "vacuum": 164.81
+  },
+  "raw|PGA|4-iron": {
+   "full": 213.83,
+   "drag": 103.98,
+   "vacuum": 160.75
+  },
+  "raw|PGA|5-iron": {
+   "full": 206.83,
+   "drag": 105.04,
+   "vacuum": 163.85
+  },
+  "raw|PGA|6-iron": {
+   "full": 198.34,
+   "drag": 109.72,
+   "vacuum": 176.76
+  },
+  "raw|PGA|7-iron": {
+   "full": 185.26,
+   "drag": 110.04,
+   "vacuum": 179.61
+  },
+  "raw|PGA|8-iron": {
+   "full": 174.24,
+   "drag": 109.4,
+   "vacuum": 180.58
+  },
+  "raw|PGA|9-iron": {
+   "full": 161.88,
+   "drag": 108.1,
+   "vacuum": 179.64
+  },
+  "raw|PGA|PW": {
+   "full": 145.6,
+   "drag": 106.14,
+   "vacuum": 177.37
+  },
+  "raw|LPGA|Driver": {
+   "full": 214.11,
+   "drag": 119.9,
+   "vacuum": 193.97
+  },
+  "raw|LPGA|3-wood": {
+   "full": 198.69,
+   "drag": 105.5,
+   "vacuum": 159.95
+  },
+  "raw|LPGA|5-wood": {
+   "full": 198.93,
+   "drag": 102.82,
+   "vacuum": 156.73
+  },
+  "raw|LPGA|Hybrid": {
+   "full": 192.29,
+   "drag": 105.31,
+   "vacuum": 162.35
+  },
+  "raw|LPGA|4-iron": {
+   "full": 180.03,
+   "drag": 97.41,
+   "vacuum": 144.68
+  },
+  "raw|LPGA|5-iron": {
+   "full": 173.67,
+   "drag": 95.62,
+   "vacuum": 141.25
+  },
+  "raw|LPGA|6-iron": {
+   "full": 169.07,
+   "drag": 99.4,
+   "vacuum": 151.1
+  },
+  "raw|LPGA|7-iron": {
+   "full": 159.46,
+   "drag": 98.54,
+   "vacuum": 150.65
+  },
+  "raw|LPGA|8-iron": {
+   "full": 150.49,
+   "drag": 99.08,
+   "vacuum": 153.89
+  },
+  "raw|LPGA|9-iron": {
+   "full": 137.07,
+   "drag": 95.66,
+   "vacuum": 147.05
+  },
+  "raw|LPGA|PW": {
+   "full": 122.4,
+   "drag": 88.2,
+   "vacuum": 132.93
+  },
+  "calibrated|PGA|Driver": {
+   "full": 278.75,
+   "drag": 140.51,
+   "vacuum": 231.33
+  },
+  "calibrated|PGA|3-wood": {
+   "full": 267.43,
+   "drag": 120.72,
+   "vacuum": 186.49
+  },
+  "calibrated|PGA|5-wood": {
+   "full": 258.87,
+   "drag": 117.31,
+   "vacuum": 180.09
+  },
+  "calibrated|PGA|Hybrid": {
+   "full": 248.02,
+   "drag": 113.68,
+   "vacuum": 172.41
+  },
+  "calibrated|PGA|3-iron": {
+   "full": 241.48,
+   "drag": 110.39,
+   "vacuum": 164.81
+  },
+  "calibrated|PGA|4-iron": {
+   "full": 233.45,
+   "drag": 108.27,
+   "vacuum": 160.75
+  },
+  "calibrated|PGA|5-iron": {
+   "full": 225.19,
+   "drag": 109.41,
+   "vacuum": 163.85
+  },
+  "calibrated|PGA|6-iron": {
+   "full": 215.0,
+   "drag": 114.47,
+   "vacuum": 176.76
+  },
+  "calibrated|PGA|7-iron": {
+   "full": 199.88,
+   "drag": 114.83,
+   "vacuum": 179.61
+  },
+  "calibrated|PGA|8-iron": {
+   "full": 187.21,
+   "drag": 114.17,
+   "vacuum": 180.58
+  },
+  "calibrated|PGA|9-iron": {
+   "full": 173.24,
+   "drag": 112.81,
+   "vacuum": 179.64
+  },
+  "calibrated|PGA|PW": {
+   "full": 155.04,
+   "drag": 110.77,
+   "vacuum": 177.37
+  },
+  "calibrated|LPGA|Driver": {
+   "full": 234.04,
+   "drag": 125.49,
+   "vacuum": 193.97
+  },
+  "calibrated|LPGA|3-wood": {
+   "full": 216.63,
+   "drag": 109.92,
+   "vacuum": 159.95
+  },
+  "calibrated|LPGA|5-wood": {
+   "full": 216.6,
+   "drag": 107.03,
+   "vacuum": 156.73
+  },
+  "calibrated|LPGA|Hybrid": {
+   "full": 208.85,
+   "drag": 109.73,
+   "vacuum": 162.35
+  },
+  "calibrated|LPGA|4-iron": {
+   "full": 195.02,
+   "drag": 101.24,
+   "vacuum": 144.68
+  },
+  "calibrated|LPGA|5-iron": {
+   "full": 187.71,
+   "drag": 99.33,
+   "vacuum": 141.25
+  },
+  "calibrated|LPGA|6-iron": {
+   "full": 182.18,
+   "drag": 103.41,
+   "vacuum": 151.1
+  },
+  "calibrated|LPGA|7-iron": {
+   "full": 171.17,
+   "drag": 102.51,
+   "vacuum": 150.65
+  },
+  "calibrated|LPGA|8-iron": {
+   "full": 160.92,
+   "drag": 103.13,
+   "vacuum": 153.89
+  },
+  "calibrated|LPGA|9-iron": {
+   "full": 145.92,
+   "drag": 99.51,
+   "vacuum": 147.05
+  },
+  "calibrated|LPGA|PW": {
+   "full": 129.61,
+   "drag": 91.54,
+   "vacuum": 132.93
+  }
+ },
+ "missing": [
+  {
+   "tour": "LPGA",
+   "club": "3-iron"
+  }
+ ],
+ "table_sizes": {
+  "trackman_avg": 24,
+  "runs": 138,
+  "trajectory": 55611
+ }
+}

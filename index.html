@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- Dimples, Drag, and Backspin -- Michael Niemeyer Jr., CPS*5745 Midterm Project, Kean University -->
+<title>Dimples, Drag, and Backspin</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<header class="hero wrap">
+  <div class="eyebrow">An explorable story · CPS*5745 Midterm Project</div>
+  <h1>Dimples, Drag, and Backspin</h1>
+  <p class="lede">Why does a spinning, dimpled golf ball fly so differently from the projectile in a physics textbook, and which launch conditions give the longest carry?</p>
+  <p class="byline">Michael Niemeyer Jr. · Department of Computer Science and Technology, Kean University · October 2026</p>
+  <p>
+    <span class="legend-key"><span class="sw model"></span><span class="tag model">Model</span> scientific simulation</span>
+    <span class="legend-key"><span class="sw meas"></span><span class="tag meas">Measured</span> TrackMan 2023 Tour averages</span>
+    <span class="legend-key"><span class="sw vac"></span>Vacuum (no air), closed form</span>
+  </p>
+</header>
+
+<div class="bar">
+  <div class="wrap">
+    <span class="shotchip" id="shotchip" aria-live="polite"></span>
+    <nav class="nav" aria-label="Views">
+      <a href="#view1">1 Hook</a><a href="#view2">2 Forces</a><a href="#view3">3 Coefficients</a><a href="#view4">4 Explorer</a>
+      <a href="#view5">5 Window</a><a href="#view6">6 3-D</a><a href="#view7">7 Evidence</a><a href="#methods">Methods</a>
+    </nav>
+    <span class="spacer"></span>
+    <label class="ctl" style="margin:0"><span style="font-size:12px;color:var(--muted)">Coefficients</span>
+      <select id="coefsel" aria-label="Coefficient set">
+        <option value="raw">Wind-tunnel (Smits &amp; Smith)</option>
+        <option value="calibrated">Calibrated to PGA driver</option>
+      </select></label>
+    <span id="unitseg"></span>
+    <span id="themeseg"></span>
+    <button type="button" id="resetall">Reset all</button>
+  </div>
+</div>
+
+<main class="wrap">
+  <!-- ======================= VIEW 1 ======================= -->
+  <section class="view" id="view1">
+    <div class="view-head"><span class="vnum">View 1</span><span class="act">Beginning · the question</span></div>
+    <h2>Your textbook is wrong about golf</h2>
+    <div class="grid2">
+      <div>
+        <p>Intro physics says a ball launched at speed <i>v</i><sub>0</sub> and angle θ<sub>0</sub> travels <i>R</i> = <i>v</i><sub>0</sub><sup>2</sup> sin 2θ<sub>0</sub> / <i>g</i>, and that 45° is best. Here a ball leaves the club at the 2023 PGA Tour driver average: 171 mph with 2545 rpm of backspin.</p>
+        <p>Move the launch angle. At the tour's real launch angle (about 10°) the ball in air <b>out-carries</b> the vacuum ball, and the measured tour average beats the vacuum answer too. Push toward 45° and the order flips: the vacuum ball flies hundreds of yards farther.</p>
+        <p class="notice">Air both helps and hurts. Views 2 and 3 show the two forces responsible.</p>
+      </div>
+      <div class="panel" id="v1-panel"></div>
+    </div>
+  </section>
+
+  <!-- ======================= VIEW 2 ======================= -->
+  <section class="view" id="view2">
+    <div class="view-head"><span class="vnum">View 2</span><span class="act">Middle · mechanism</span></div>
+    <h2>Three forces act on the ball</h2>
+    <div class="grid2">
+      <div>
+        <p><b style="color:var(--weight)">Weight</b> <i>mg</i> pulls down and never changes. <b style="color:var(--drag)">Drag</b> points against the ball's motion through the air. <b style="color:var(--lift)">Lift</b> points at right angles to that motion; backspin tilts it upward.</p>
+        <p>Drag and lift both grow with the square of air speed: <i>F</i> = ½ ρ <i>A</i> <i>C</i> <i>u</i><sup>2</sup>. Early in a drive the ball is so fast that lift is bigger than its weight, so it keeps climbing. As it slows, both aerodynamic forces shrink and gravity takes over.</p>
+        <p class="notice">Play the flight, step it, drag the time slider, or click the force chart. The arrows share one scale in newtons, and the path is drawn at true shape so the angles are real. The time cursor is shared with View 3.</p>
+      </div>
+      <div class="panel" id="v2-panel"></div>
+    </div>
+  </section>
+
+  <!-- ======================= VIEW 3 ======================= -->
+  <section class="view" id="view3">
+    <div class="view-head"><span class="vnum">View 3</span><span class="act">Middle · mechanism</span></div>
+    <h2>Where lift and drag come from</h2>
+    <div class="grid2">
+      <div>
+        <p>How strongly the air pushes depends on two dimensionless numbers. The <b>spin ratio</b> <i>S</i> = <i>r</i>ω/<i>u</i> compares the surface speed of the spinning ball to its speed through the air. The <b>Reynolds number</b> Re = ρ<i>uD</i>/μ says how turbulent the flow is.</p>
+        <p>Smits and Smith (1994) measured a dimpled ball in a wind tunnel and fitted <i>C</i><sub>L</sub> = 0.54 <i>S</i><sup>0.4</sup> and a drag coefficient that rises with <i>S</i> and wobbles with Re. During a drive, speed falls faster than spin, so <i>S</i> rises: watch the blue marker slide right along the curves.</p>
+        <p>Dimples trip the boundary layer into turbulence. The flow then clings to the back of the ball longer, the wake narrows, and drag drops. Switch to a smooth sphere (drag coefficient about 0.5) to see how much carry the dimples buy.</p>
+        <p class="notice">The grey band is the range the published fit was made for (S 0.08–0.20). Outside it, the curves are extrapolation.</p>
+      </div>
+      <div class="panel" id="v3-panel"></div>
+    </div>
+  </section>
+
+  <!-- ======================= VIEW 4 ======================= -->
+  <section class="view" id="view4">
+    <div class="view-head"><span class="vnum">View 4</span><span class="act">Middle · exploration</span></div>
+    <h2>Build your own shot</h2>
+    <p>Change ball speed, launch angle, spin and spin-axis tilt, or load any club's measured 2023 averages. Pin up to three shots to compare. Every other view follows the shot you set here.</p>
+    <div class="panel" id="v4-panel"></div>
+  </section>
+
+  <!-- ======================= VIEW 5 ======================= -->
+  <section class="view" id="view5">
+    <div class="view-head"><span class="vnum">View 5</span><span class="act">Middle · exploration</span></div>
+    <h2>The optimal launch window</h2>
+    <div class="grid2">
+      <div>
+        <p>For a fixed ball speed, which mix of launch angle and spin carries farthest? Each map holds 3,721 simulated shots (61 angles × 61 spin rates), precomputed in Python at every ball speed that appears in the TrackMan tables.</p>
+        <p>Too little spin and the ball has no lift and falls out of the sky. Too much and drag grows and the ball balloons. The best carry sits in between, along a ridge where a lower launch needs more spin and a higher launch needs less.</p>
+        <p class="notice">Darker = longer carry. The color scale covers the top 60 yd of each map; anything shorter shares the lightest color. White lines are contours every 10 yd (or 10 m). Orange markers are measured clubs at this exact ball speed.</p>
+      </div>
+      <div class="panel" id="v5-panel"></div>
+    </div>
+  </section>
+
+  <!-- ======================= VIEW 6 ======================= -->
+  <section class="view" id="view6">
+    <div class="view-head"><span class="vnum">View 6</span><span class="act">Middle · exploration</span></div>
+    <h2>Wind, altitude and curve in three dimensions</h2>
+    <p>Tilting the spin axis tilts the lift sideways, so the ball curves: a fade for a right-handed golfer when the axis tilts right. Wind changes the ball's speed relative to the air, and altitude thins the air. Save two scenarios as A and B to compare them. This is the one view where 3-D earns its place, because the curve really happens sideways.</p>
+    <div class="panel" id="v6-panel"></div>
+  </section>
+
+  <!-- ======================= VIEW 7 ======================= -->
+  <section class="view" id="view7">
+    <div class="view-head"><span class="vnum">View 7</span><span class="act">Ending · evidence, insights, limits</span></div>
+    <h2>How close is the model to real shots?</h2>
+    <p>Each point is one club: TrackMan's measured 2023 average on the horizontal axis, the model run from that club's measured ball speed, launch angle and spin on the vertical. Points on the dashed line would be perfect. The bar chart breaks the current shot's carry into what drag takes and what lift gives back.</p>
+    <div class="panel" id="v7-panel"></div>
+    <h3>What the evidence supports</h3>
+    <ul class="notice-list" id="insights"></ul>
+    <h3>Limitations</h3>
+    <ul class="notice-list">
+      <li>The aerodynamic fit is from one 1990s two-piece ball in one wind tunnel, and Smits &amp; Smith state it is only for driver shots (Re 70,000–210,000, S 0.08–0.20). Every iron in the table spends most of its flight outside that range.</li>
+      <li>Point-mass model: no ball deformation, no roll after landing, flat ground, uniform wind at all heights, constant air temperature.</li>
+      <li>TrackMan values are averages over many shots. Because flight is nonlinear, the carry of the average launch need not equal the average carry, so some disagreement is expected even from a perfect model.</li>
+      <li>Calibration used one target (PGA driver carry) and two constants, and the best fit sits on the edge of the range the paper allows. The other 22 clubs are held out.</li>
+    </ul>
+  </section>
+
+  <!-- ======================= METHODS ======================= -->
+  <section class="view" id="methods">
+    <div class="view-head"><span class="vnum">Methods</span><span class="act">Data, model, workflow, verification</span></div>
+    <h2>How this was built</h2>
+    <div id="methods-body"></div>
+  </section>
+</main>
+
+<footer class="wrap">
+  <p>Data: TrackMan, "Introducing updated Tour averages" (2023 PGA and LPGA tables). Model: A. J. Smits and D. R. Smith, "A new aerodynamic model of a golf ball in flight," <i>Science and Golf II</i>, 1994, pp. 340–347; U.S. Standard Atmosphere 1976. Course exemplar: Y. Kumar, "The LLM Story Revised with NO Human-In-The-Loop." Built with plain JavaScript and Canvas, no libraries. AI assistance (Claude) disclosed in the report.</p>
+</footer>
+
+<script src="js/physics.js"></script>
+<script src="data/bundle.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/core.js"></script>
+<script src="js/v1_vacuum.js"></script>
+<script src="js/v2_forces.js"></script>
+<script src="js/v3_coeffs.js"></script>
+<script src="js/v4_explorer.js"></script>
+<script src="js/v5_window.js"></script>
+<script src="js/v6_3d.js"></script>
+<script src="js/v7_validation.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
