@@ -7,7 +7,6 @@ Michael Niemeyer Jr., CPS*5745 Dynamic Scientific Storytelling, Midterm Project,
 
 Double-click `index.html`. It runs in any modern browser with no server, no internet and no installation.
 
-To publish on obi2, copy this whole folder to `~/public_html/golf/` and open
 `https://obi2.kean.edu/~niemeymi/golf/`.
 
 ## What is inside
